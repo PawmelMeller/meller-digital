@@ -47,7 +47,8 @@
         }
         header p {
             margin-top: 10px;
-            font-size: 1.3em;
+            font-size: 1.5em;
+            color: #142f5f;
         }
         nav {
             background: transparent;
@@ -220,6 +221,68 @@
         .award-item span {
             font-size: 1em;
             color: #1e3a8a;
+        }
+
+        /* Sekcja synergii – inspirowana układem "Social, Influence, Commerce" z Ogaki Digital */
+        .synergy-section {
+            position: relative;
+            padding: 60px 20px;
+            background: #f2ede8;
+            text-align: center;
+        }
+        .synergy-section img.small-image {
+            position: absolute;
+            width: 120px;
+            height: auto;
+            top: -30px;
+        }
+        .synergy-section img.small-left {
+            left: 2%;
+        }
+        .synergy-section img.small-right {
+            right: 2%;
+        }
+        .synergy-section .synergy-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .synergy-section .synergy-image {
+            flex: 1 1 400px;
+        }
+        .synergy-section .synergy-image img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .synergy-section .synergy-text {
+            flex: 1 1 400px;
+            color: #1e3a8a;
+        }
+        .synergy-section .synergy-text h3 {
+            margin-top: 0;
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        .synergy-section .synergy-text p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .synergy-section .synergy-text a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1e3a8a;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #f59e0b;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .synergy-section .synergy-text a:hover {
+            color: #f59e0b;
+            border-color: #d88500;
         }
 
         /* Sekcja portfolio */
@@ -450,6 +513,23 @@
             <div class="award-item"><span>2024 – Top 15 agencji SEO w Polsce</span></div>
             <div class="award-item"><span>2023 – Lider innowacji w marketingu</span></div>
             <div class="award-item"><span>2022 – Najlepszy projekt stron www</span></div>
+        </div>
+    </section>
+
+    <!-- Sekcja synergii – pokazuje, że nasze usługi współpracują ze sobą jak w Ogaki Digital -->
+    <section class="synergy-section">
+        <!-- Dekoracyjne małe obrazy po bokach -->
+        <img src="synergy1.png" alt="Dekoracja" class="small-image small-left">
+        <img src="synergy2.png" alt="Dekoracja" class="small-image small-right">
+        <div class="synergy-inner">
+            <div class="synergy-image">
+                <img src="services.png" alt="Synergia usług">
+            </div>
+            <div class="synergy-text">
+                <h3>Strony, SEO, Automatyzacja</h3>
+                <p>Nasze kompetencje w projektowaniu stron, pozycjonowaniu oraz automatyzacji marketingu łączą się, aby pomóc Twojej marce rosnąć. Zintegrowane działania sprawiają, że komunikacja, sprzedaż i obsługa klienta tworzą spójny ekosystem.</p>
+                <a href="#uslugi">Nasze usługi &rarr;</a>
+            </div>
         </div>
     </section>
 
