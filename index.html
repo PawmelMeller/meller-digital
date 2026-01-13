@@ -28,7 +28,8 @@
             position: absolute;
             left: 5%;
             top: 10%;
-            font-size: 20vw;
+            /* większa wielkość inicjałów dla efektu typograficznego */
+            font-size: 25vw;
             font-weight: bold;
             line-height: 1;
             color: #e0d7cb;
@@ -43,16 +44,18 @@
         }
         header h1 {
             margin: 10px 0 0 0;
-            font-size: 3em;
+            /* powiększony nagłówek inspirowany Ogaki */
+            font-size: 4em;
         }
         header p {
             margin-top: 10px;
-            font-size: 1.5em;
-            color: #142f5f;
+            /* większy podtytuł dla lepszej czytelności */
+            font-size: 1.8em;
+            color: #0f1728;
         }
         nav {
             background: transparent;
-            color: #1e3a8a;
+            color: #0f1728;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -60,13 +63,15 @@
         }
         nav a {
             display: inline-block;
-            color: #1e3a8a;
+            /* stonowany kolor czcionki jak w Ogaki */
+            color: #0f1728;
             padding: 10px 16px;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s, border-bottom 0.3s;
         }
         nav a:hover {
+            /* akcent w odcieniu pomarańczowym */
             color: #f59e0b;
             border-bottom: 2px solid #f59e0b;
         }
@@ -476,8 +481,8 @@
 </head>
 <body>
     <header>
-        <!-- Ozdobna duża litera w tle -->
-        <div class="decorative-text">M</div>
+        <!-- Ozdobne inicjały w tle (MD) -->
+        <div class="decorative-text">MD</div>
         <!-- Zawartość hero (logo, nagłówek i opis) -->
         <div class="hero-content">
             <img src="logo.png" alt="Logo Meller Digital" style="max-height: 90px; margin-bottom: 10px;">
