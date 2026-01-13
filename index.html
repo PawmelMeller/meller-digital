@@ -156,6 +156,254 @@
             padding: 30px 20px;
             font-size: 0.9em;
         }
+
+        /* Ustawienie rodzin czcionek dla nagłówków, aby nawiązywać do klasycznej estetyki */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+
+        /* Sekcja o nas */
+        .about-section {
+            padding: 60px 20px;
+            background: #f2ede8;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .about-text {
+            flex: 1 1 500px;
+        }
+        .about-text h2 {
+            margin-top: 0;
+            font-size: 2.5em;
+            color: #1e3a8a;
+        }
+        .about-text p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .about-image {
+            flex: 1 1 400px;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        /* Sekcja wyróżnień */
+        .awards-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .awards-section h3 {
+            margin-top: 0;
+            color: #1e3a8a;
+            font-size: 2em;
+        }
+        .awards-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .award-item {
+            flex: 1 1 180px;
+            min-width: 150px;
+        }
+        .award-item span {
+            font-size: 1em;
+            color: #1e3a8a;
+        }
+
+        /* Sekcja portfolio */
+        .portfolio-section {
+            padding: 60px 20px;
+        }
+        .portfolio-section h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .portfolio-item {
+            flex: 1 1 calc(33% - 20px);
+            background: #ffffff;
+            border: 1px solid #e0d7cb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .portfolio-item h4 {
+            margin: 15px;
+            color: #1e3a8a;
+        }
+        .portfolio-item p {
+            margin: 0 15px 15px;
+            color: #555;
+        }
+
+        /* Sekcja newslettera */
+        .newsletter-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f2ede8;
+            border-top: 1px solid #e0d7cb;
+            border-bottom: 1px solid #e0d7cb;
+        }
+        .newsletter-section h2 {
+            margin-top: 0;
+            color: #1e3a8a;
+            font-size: 2em;
+        }
+        .newsletter-section p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        .newsletter-section form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .newsletter-section input[type="email"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-width: 250px;
+        }
+        .newsletter-section button {
+            background: #f59e0b;
+            color: #1e3a8a;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        .newsletter-section button:hover {
+            background: #d88500;
+            color: #ffffff;
+        }
+
+        /* Sekcja "Kim jesteśmy" */
+        .weare-section {
+            padding: 60px 20px;
+            background: #f2ede8;
+            text-align: center;
+        }
+        .weare-section h2 {
+            font-size: 2.2em;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+        .weare-tagline {
+            font-size: 1.4em;
+            font-style: italic;
+            color: #142f5f;
+            margin-bottom: 20px;
+        }
+        .weare-description {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Sekcja kontaktu */
+        .contact-section {
+            padding: 60px 20px;
+            background: #f2ede8;
+        }
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1e3a8a;
+            font-size: 2.2em;
+        }
+        .contact-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .contact-info {
+            flex: 1 1 200px;
+            min-width: 200px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .contact-info h3 {
+            color: #1e3a8a;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #142f5f;
+            text-decoration: none;
+        }
+        .contact-form-wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form-wrapper h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form-wrapper form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #142f5f;
+        }
+        .contact-form-wrapper form input,
+        .contact-form-wrapper form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form-wrapper form button {
+            background: #f59e0b;
+            color: #1e3a8a;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+            transition: background 0.3s, color 0.3s;
+        }
+        .contact-form-wrapper form button:hover {
+            background: #d88500;
+            color: #ffffff;
+        }
         @media (max-width: 600px) {
             .services {
                 flex-direction: column;
@@ -177,8 +425,40 @@
     <nav>
         <a href="#uslugi">Usługi</a>
         <a href="#o-nas">O nas</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
+
+    <!-- Sekcja o nas / opisowa inspirowana stylem Ogaki Digital -->
+    <section class="about-section" id="o-nas">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Marketing to nasz świat</h2>
+                <p>W Meller Digital wierzymy, że skuteczna komunikacja i dobrze zaprojektowane doświadczenia budują trwałe relacje. Łączymy kreatywność, technologię i strategię, aby Twoja marka stała się widoczna w sieci i przyciągała właściwych klientów.</p>
+            </div>
+            <div class="about-image">
+                <img src="about.png" alt="Abstrakcyjna ilustracja agencji">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja wyróżnień -->
+    <section class="awards-section">
+        <h3>Wyróżnienia i nagrody</h3>
+        <div class="awards-grid">
+            <div class="award-item"><span>2025 – Najlepsza agencja digital w regionie</span></div>
+            <div class="award-item"><span>2024 – Top 15 agencji SEO w Polsce</span></div>
+            <div class="award-item"><span>2023 – Lider innowacji w marketingu</span></div>
+            <div class="award-item"><span>2022 – Najlepszy projekt stron www</span></div>
+        </div>
+    </section>
+
+    <!-- Sekcja "Kim jesteśmy" inspirowana OGAKI -->
+    <section class="weare-section">
+        <h2>Kim jesteśmy</h2>
+        <p class="weare-tagline">Social‑first, digital‑fluent, strategy‑led.</p>
+        <p class="weare-description">Jako agencja Meller Digital pomagamy markom rosnąć w świecie mediów społecznościowych i marketingu internetowego. Łączymy najnowsze technologie, kreatywność i doświadczenie, aby tworzyć spójne ekosystemy komunikacji i sprzedaży online. Nasz zespół specjalistów zadba o to, by Twoja marka wyróżniała się, przyciągała uwagę i osiągała realne wyniki.</p>
+    </section>
     <div class="container" id="uslugi">
         <h2>Nasze usługi</h2>
         <div class="services">
@@ -205,26 +485,65 @@
         <p>Skontaktuj się z nami, aby omówić bezpłatny audyt i wycenę.</p>
         <a href="#kontakt">Skontaktuj się</a>
     </div>
-    <div class="container" id="o-nas">
-        <h2>O nas</h2>
-        <p>
-            Tutaj możesz w kilku zdaniach opisać swoją firmę. Przedstaw swoje doświadczenie,
-            wartości oraz to, w jaki sposób Twoje usługi pomagają klientom osiągać cele.
-            Pamiętaj, aby napisać konkretnie, czym się wyróżniasz.
-        </p>
-    </div>
-    <div class="container" id="kontakt">
-        <h2>Kontakt</h2>
+    <!-- Sekcja portfolio inspirowana układem studiów przypadku Ogaki Digital -->
+    <section class="portfolio-section" id="portfolio">
+        <h2>Studia przypadków</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="portfolio1.png" alt="Studium przypadku 1">
+                <h4>Sklep internetowy – wzrost sprzedaży o 200 %</h4>
+                <p>Dla lokalnego sklepu e‑commerce przygotowaliśmy kompleksową optymalizację SEO i kampanię content marketingową, co przełożyło się na trzykrotny wzrost ruchu organicznego.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio2.png" alt="Studium przypadku 2">
+                <h4>Strona usługowa – ekspresowa modernizacja</h4>
+                <p>Stworzyliśmy nowoczesną stronę usługową, wdrażając system CMS i integrację z rezerwacjami online, co ułatwiło klientom umawianie wizyt.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio3.png" alt="Studium przypadku 3">
+                <h4>Automatyzacja marketingu – oszczędność czasu</h4>
+                <p>Wdrożyliśmy narzędzia do automatyzacji e‑mail marketingu i social media, dzięki czemu firma zwiększyła liczbę zapytań o 40 % przy mniejszym nakładzie pracy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja newslettera -->
+    <section class="newsletter-section">
+        <h2>Nie przegap nowości od Meller Digital</h2>
+        <p>Zapisz się do naszego newslettera, aby otrzymywać wskazówki, analizy i specjalne oferty.</p>
         <form>
-            <label for="name">Imię i nazwisko</label>
-            <input type="text" id="name" name="name" placeholder="Imię i nazwisko">
-            <label for="email">Adres e‑mail</label>
-            <input type="email" id="email" name="email" placeholder="Adres e‑mail">
-            <label for="message">Wiadomość</label>
-            <textarea id="message" name="message" rows="4" placeholder="Twoja wiadomość"></textarea>
-            <button type="submit">Wyślij</button>
+            <input type="email" placeholder="Twój adres e‑mail" required>
+            <button type="submit">Zapisz się</button>
         </form>
-    </div>
+    </section>
+    <section class="contact-section" id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="contact-columns">
+            <div class="contact-info">
+                <h3>Skontaktuj się</h3>
+                <p>E‑mail: <a href="mailto:kontakt@mellerdigital.pl">kontakt@mellerdigital.pl</a></p>
+                <p>Telefon: <a href="tel:+48123456789">+48 123&nbsp;456&nbsp;789</a></p>
+            </div>
+            <div class="contact-info">
+                <h3>Znajdź nas</h3>
+                <p>Gdynia / Warszawa</p>
+                <p>ul. Przykładowa&nbsp;1A</p>
+                <p>81‑000 Gdynia, Polska</p>
+            </div>
+        </div>
+        <div class="contact-form-wrapper">
+            <h3>Napisz do nas</h3>
+            <form>
+                <label for="name">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" placeholder="Imię i nazwisko">
+                <label for="email">Adres e‑mail</label>
+                <input type="email" id="email" name="email" placeholder="Adres e‑mail">
+                <label for="message">Wiadomość</label>
+                <textarea id="message" name="message" rows="4" placeholder="Twoja wiadomość"></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </section>
     <footer>
         &copy; <span id="year"></span> Meller Digital. Wszystkie prawa zastrzeżone.
     </footer>
